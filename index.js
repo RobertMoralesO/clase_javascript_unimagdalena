@@ -255,3 +255,105 @@ switch(a){
         console.log('Ninguno de los valores')
 
 }
+
+// var vs let vs const
+
+/*
+var edad_2 = 10;
+var edad_2 = 20;
+console.log(edad_2);*/
+
+/*let edad2 = 10;
+edad2 = 20;*/
+
+/*const edad_2 = 10;
+edad_2 = 20;*/
+
+//Escope de var, let y const
+
+/*var edad_2 = 10;
+if (true){
+    var edad_2 = 20;
+    console.log(edad_2);
+}
+console.log(edad_2)*/
+/*
+let edad_2 = 10;
+if (true){
+    let edad_2 = 20;
+    console.log(edad_2);
+}
+console.log(edad_2)
+
+const edad_2 = 10;
+if (true){
+    const edad_2 = 20;
+    console.log(edad_2);
+}
+console.log(edad_2)*/
+
+/*let edades = [10, 20, 30]
+edades = [20, 40, 50]
+edades.push(70)
+console.log(edades)*/
+
+/*const edades = [10, 20, 30]
+edades.push(70)
+console.log(edades)*/
+
+/*
+const persona = {
+    nombre: "Roberto",
+    apellido: "Morales",
+    edad : 33
+}
+persona.nombre = "Carlos"
+persona.apellido = "Mejía"
+persona.edad = "12"
+
+console.log(persona)*/
+
+// Funciones
+/*
+function sumar(num_uno, num_dos){
+    console.log(num_uno + num_dos)
+}
+
+sumar(4, 5)*/
+
+// Función Flecha
+
+const sumar = (num_uno, num_dos) => {
+    console.log(num_uno + num_dos)
+}
+
+const saludar = () =>{
+    console.log('Hola Mundo')
+}
+
+const cuadrado = base =>{
+    console.log(base ** cuadrado)
+}
+
+const sumar_dos = (num_uno, num_dos) => {
+    return num_uno + num_dos;
+}
+
+const sumar_tres = (num_uno, num_dos) => num_uno + num_dos;
+
+// Template String
+
+//backtick
+const potencia = (base, exponente) => `El resultado de la potencia es ${base ** exponente}`
+
+// Destructuring Objects
+
+const mascota = {
+    nombre: 'Tom',
+    edad: 5,
+    vivo: true,
+    razas: ['Pastor Alemán', 'Pitbul']
+}
+
+console.log(mascota.nombre)
+const {edad, vivo} = mascota
