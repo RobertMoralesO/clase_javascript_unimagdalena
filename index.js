@@ -357,3 +357,63 @@ const mascota = {
 
 console.log(mascota.nombre)
 const {edad, vivo} = mascota
+
+
+// PROMESAS
+
+const data = [
+    {
+      title: 'Aprendiendo JavaScript',
+      year: '2021',
+      isbn: '994-223-4527',
+      author: 'Roberto Morales'
+    },{
+      title: 'Aprendiendo Python',
+      year: '2018',
+      isbn: '994-555-4527',
+      author: 'Manuel Castro'
+    },{
+      title: 'Aprendiendo Ruby',
+      year: '2019',
+      isbn: '994-223-3333',
+      author: 'Carlos Mejía'
+    }
+  ]
+  //const getData = () => data;
+  /*const getData = () => {
+    setTimeout(() => {
+      return data;
+    }, 1000)
+  }*/
+  
+  function getData(){
+    return new Promise((resolve, reject)=> {
+      setTimeout(()=>{
+        resolve(data);
+      }, 5000)
+    })
+  }
+  
+  /*datos = getData()
+  console.log(datos)*/
+  
+  getData().then((response)=> console.log(response))
+
+// Async & await (azúcar sintáctico)
+
+/*
+const obtenerPersonajes = async () => {
+  try{
+    const res = await fetch("https://rickandmortyapi.com/api/character")
+    const data = await res.json()
+    const results = data.results
+    console.log(results)
+  }catch(error){
+    console.log(error)
+  }
+}
+
+
+obtenerPersonajes()
+
+*/
