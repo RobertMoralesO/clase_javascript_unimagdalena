@@ -183,3 +183,75 @@ console.log('hola'>1) // false
 console.log(null == undefined) // true Error de JavaScript
 console.log(0 == false) // true
 console.log('0' == false) // true
+
+// if
+
+/*
+if (condicion){
+
+}else if(condicion){
+
+}else{
+
+}
+*/
+
+// if de linea
+
+// if(condicion) console.log('Mensaje')
+
+// Operador Ternario
+// condicion ? operacion verdadera : operacion falsa;
+
+resultado = 4 > 5 ? 'es verdadero': 'es falso'
+console.log(resultado)
+
+// WHILE
+/* while(condicion){
+
+}*/
+
+// DO WHILE
+/*
+do {
+
+}while(condicion)
+*/
+
+// FOR
+/*
+for (conmienzo; condicion; incremento){
+
+}
+*/ 
+
+for (i = 0; i<=10; i++){
+    console.log(i+1)
+}
+
+//SWITCH
+
+/*
+switch(valor):{
+    case valor1:
+        [break];
+    case valor2:
+        [break];
+    default:
+        [break];
+    
+}
+*/
+
+a = 2 + 3
+switch(a){
+    case 3:
+        console.log('El resultado es 3')
+        break;
+    case 4:
+        console.log('El resultado es 4')
+        break;
+    default:
+        console.log('Ninguno de los valores')
+
+}
